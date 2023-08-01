@@ -41,11 +41,17 @@ URL: POST /api/users
 Пример запроса:
 
 {
+
     "name": "Emma",
+    
     "family": "Wilson",
+    
     "surname": "Miller",
+    
     "email": "emma.miller@example.com",
+    
     "userRole": "CUSTOMER_USER"
+    
 }
 
 Пример успешного ответа:
@@ -58,38 +64,71 @@ URL: GET /api/users
 Пример ответа:
 
 [
+
     {
+    
         "id": 11,
+        
         "name": "John",
+        
         "family": "Black",
+        
         "surname": "Jackson",
+        
         "email": "Black.jackson@example.com",
+        
         "userRole": "SECURE_API_USER"
+        
     },
+    
     {
+    
         "id": 3,
+        
         "name": "Emily",
+        
         "family": "Johnson",
+        
         "surname": "Smith",
+        
         "email": "emily.smith@example.com",
+        
         "userRole": "SALE_USER"
+        
     },
+    
     {
+    
         "id": 6,
+        
         "name": "Emma",
+        
         "family": "Wilson",
+        
         "surname": "Miller",
+        
         "email": "emma.miller@example.com",
+        
         "userRole": "CUSTOMER_USER"
+        
     },
+    
     {
+    
         "id": 9,
+        
         "name": "James",
+        
         "family": "Jackson",
+        
         "surname": "Thomas",
+        
         "email": "james.thomas@example.com",
+        
         "userRole": "SECURE_API_USER"
+        
     }
+    
 ]
 
 Описание ролей
