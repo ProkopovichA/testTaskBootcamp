@@ -25,7 +25,9 @@ git clone https://github.com/ProkopovichA/testTaskBootcamp.git
 - В файле "application.properties" (src/main/resources/application.properties) укажите настройки базы данных, такие как URL, имя пользователя и пароль:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/users?serverTimezone=Europe/Minsk&useSSL=false
+
 spring.datasource.username=root
+
 spring.datasource.password=Root_123
 
 3. Запустите приложение:
