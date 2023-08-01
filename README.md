@@ -17,16 +17,16 @@
 
 1. Склонируйте репозиторий на свой локальный компьютер:
 
-git clone https://github.com/yourusername/restful-user-management.git
+git clone https://github.com/ProkopovichA/testTaskBootcamp.git
 
 2. Настройте базу данных MySQL:
 
 - Создайте новую базу данных с именем "users".
 - В файле "application.properties" (src/main/resources/application.properties) укажите настройки базы данных, такие как URL, имя пользователя и пароль:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/users?useSSL=false
-spring.datasource.username=your_mysql_username
-spring.datasource.password=your_mysql_password
+spring.datasource.url=jdbc:mysql://localhost:3306/users?serverTimezone=Europe/Minsk&useSSL=false
+spring.datasource.username=root
+spring.datasource.password=Root_123
 
 3. Запустите приложение:
 
@@ -97,6 +97,3 @@ URL: GET /api/users
 - Customer User: Пользователь с правами для управления клиентами.
 - Secure API User: Пользователь с правами доступа к безопасным API.
 
-Логирование
-
-В приложении используется Log4j2 для логирования. Лог-файлы будут доступны в папке logs.
