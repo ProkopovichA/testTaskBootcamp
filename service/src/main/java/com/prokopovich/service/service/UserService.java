@@ -4,6 +4,8 @@ import com.prokopovich.service.exception.UserAlreadyExistException;
 import com.prokopovich.repository.entity.User;
 import com.prokopovich.repository.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,6 +25,10 @@ public class UserService {
 
     public List<User> findAllByOrderByEmail() {
         return userRepository.findAllByOrderByEmail();
+    }
+
+    public Page<User> findAllByOrderByEmail(Pageable pageable) {
+        return userRepository.findAllByOrderByEmail(pageable);
     }
 
 }
